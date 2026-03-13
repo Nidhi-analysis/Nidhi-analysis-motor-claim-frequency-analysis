@@ -1,6 +1,19 @@
 # Motor Insurance Risk Modelling
 
-![Claim Count Distribution](visuals/claim_count_frequency.png)
+![Driver Age Risk](visuals/driver_age_risk.png)
+
+## Table of Contents
+
+- Problem Statement
+- Project Objectives
+- Dataset
+- Methodology
+- Model Results
+- Key Findings
+- Visualisations
+- Project Structure
+- How to Run the Project
+- Tools & Libraries
 
 This project performs an actuarial analysis of motor insurance claim frequency using the **freMTPL2 dataset**.
 The objective is to identify key risk factors influencing claim frequency and to build statistical models used in insurance pricing.
@@ -165,7 +178,7 @@ Motor-Insurance-Risk-Modelling
 Clone the repository
 
 ```
-git clone https://github.com/Nidhi-analysis/Nidhi-analysis-Motor-Insurance-Risk-Modelling.git
+git clone https://github.com/Nidhi-analysis/motor-insurance-risk-modelling.git
 ```
 
 Install dependencies
