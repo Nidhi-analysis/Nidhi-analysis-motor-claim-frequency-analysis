@@ -1,4 +1,6 @@
-# Motor Insurance Risk Modelling
+# Motor Insurance Claim Frequency Modelling
+
+**Keywords:** Actuarial Science, GLM, Risk Modelling, Insurance Analytics, Machine Learning, Python
 
 ![Driver Age Risk](visuals/driver_age_risk.png)
 
@@ -34,6 +36,8 @@ This project aims to analyse motor insurance claim data and build statistical mo
 
 # Project Objectives
 
+- Perform data-driven risk analysis using statistical and machine learning concepts
+
 The main objectives of this project are:
 
 * Explore motor insurance claim data
@@ -42,6 +46,7 @@ The main objectives of this project are:
 * Perform risk segmentation across policyholder characteristics
 * Fit statistical models for claim frequency
 * Evaluate model performance and assumptions
+
 
 ---
 
@@ -109,12 +114,16 @@ Model performance is compared using the **Akaike Information Criterion (AIC)**.
 
 # Model Results
 
-Two statistical models were fitted to estimate claim frequency.
+Two statistical models were fitted to estimate claim frequency and their performance was compared.
 
-| Model                        | AIC    |
-| ---------------------------- | ------ |
-| Poisson Regression           | 244225 |
-| Negative Binomial Regression | 243535 |
+| Model | AIC |
+|------|------|
+| Poisson Regression | 288817 |
+| Negative Binomial Regression | 287907 |
+
+Model validation using the RMSE metric produced:
+
+RMSE (Observed vs Predicted Frequency): **0.5457**
 
 Since the **Negative Binomial model has a lower AIC**, it provides a better fit for the claim frequency data.
 
@@ -142,7 +151,13 @@ Example visual outputs generated in this project.
 This plot shows the distribution of claim counts across policies.  
 Most policies have zero claims, while higher claim counts occur much less frequently, resulting in a highly skewed distribution typical in insurance datasets.
 
-![Claim Count Distribution](visuals/claim_count_frequency.png)
+![Claim Count Distribution](visuals/claim_count_distribution.png)
+
+### Claim Frequency by Driver Age
+
+This plot illustrates how claim frequency varies across driver age groups. Younger drivers typically exhibit higher claim frequencies, reflecting increased risk associated with limited driving experience.
+
+![Driver Age Risk](visuals/driver_age_risk.png)
 
 ### Observed vs Predicted Claim Frequency
 
